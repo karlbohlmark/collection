@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "keywords": ["enumerable", "data", "model", "db"],
   "dependencies": {
-    "component/enumerable": "*"
+    "karlbohlmark/enumerable": "*"
   },
   "development": {},
   "license": "MIT",
