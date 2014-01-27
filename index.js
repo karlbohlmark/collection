@@ -62,3 +62,16 @@ Collection.prototype.length = function(){
 Collection.prototype.push = function(model){
   return this.models.push(model);
 };
+
+/**
+ * Return plain javascript object representation.
+ *
+ * @return {Object}
+ * @api public
+ */
+
+Collection.prototype.toJSON = function(){
+  return this.models.map(function(m) {
+    return m.toJSON && m.toJSON() || m;
+  });
+};
